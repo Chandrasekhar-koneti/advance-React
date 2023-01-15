@@ -28,12 +28,17 @@ function App() {
 
   ]
 //  expenses.map((expenses)=>(console.log(expenses)))
+ 
+  const addexpensehandler=expense=>{
+    console.log('inAppjs')
+    console.log(expense)
+  }
 
 
   return (
 
     <div>
-     <NewExpense/>
+     <NewExpense onAddexpense={addexpensehandler}/>
   
      {expenses.map((expense,index)=>
      
